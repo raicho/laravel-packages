@@ -20,7 +20,7 @@
     },
     "autoload": {
         "files": [
-            "src/cls/Loader.php"
+            "src/services/Loader.php"
         ]
     }
 }
