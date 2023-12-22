@@ -1,5 +1,5 @@
 {
-    "name": "laravel/packages",
+    "name": "rkstylex/packages",
     "description": "Easy integration and use of packages in laravel",
     "license": "BSD-3-Clause",
     "autoload": {
