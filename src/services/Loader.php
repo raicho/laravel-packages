@@ -3,6 +3,7 @@ namespace Rkstylex\Services;
 use Illuminate\Support\ServiceProvider;
 class Loader extends ServiceProvider
 {
+    public function __construct() {} 
     /**
      * @return void
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
