@@ -1,7 +1,7 @@
 {
     "name": "laravel/packages",
     "description": "Easy integration and use of packages in laravel",
-    "license": "MID",
+    "license": "BSD-3-Clause",
     "autoload": {
         "psr-4": {
             "Laravel\\Packages\\": "src/"
