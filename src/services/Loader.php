@@ -1,7 +1,7 @@
 <?php
-
 namespace Rkstylex\Services;
-class Loader
+use Illuminate\Support\ServiceProvider;
+class Loader extends ServiceProvider
 {
     public function __construct()
     {
