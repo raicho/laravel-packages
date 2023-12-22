@@ -17,10 +17,5 @@
     "repositories": {
         "type": "vcs",
         "url": "https://github.com/raicho/laravel-packages.git"
-    },
-    "autoload": {
-        "files": [
-            "src/services/Loader.php"
-        ]
     }
 }
