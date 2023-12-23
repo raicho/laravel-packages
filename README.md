@@ -1,5 +1,4 @@
-Read more: https://packagist.org/packages/rkstylex/packages <br>
-Dev install: ```composer require rkstylex/packages:dev-main```
+Install: ```composer require rkstylex/packages:dev-main```
 <br>Add in config/app.php <br>
 <pre>
 providers [
@@ -7,3 +6,5 @@ providers [
     \Rkstylex\Services\Loader::class
 ]
 </pre>
+
+<p>Example how to create bundle: <a href="https://github.com/raicho/horn.bg/tree/main/bundles">here</a></a></p>
