@@ -3,7 +3,7 @@ namespace Rkstylex\Services;
 use Illuminate\Support\ServiceProvider;
 class Loader extends ServiceProvider
 {
-    public function __construct() {} 
+    public function __construct() {}
     /**
      * @return void
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
@@ -15,7 +15,7 @@ class Loader extends ServiceProvider
         !is_dir($dir) ? mkdir($dir) : null;
         array_filter(scandir($dir), function ($item) use ($dir) {
             if( !in_array($item, ['.', '..'])) {
-                $bundleDirectory = $dir.'\\'.$item;
+                $bundleDirectory = $dir.'/'.$item;
                 is_dir($bundleDirectory) ? $this->loadBundle($bundleDirectory)  : null;
             }
         });
@@ -29,7 +29,7 @@ class Loader extends ServiceProvider
      */
     private function loadBundle($bundleDirectory): void
     {
-        $initFile = $bundleDirectory.'\\init.php';
+        $initFile = $bundleDirectory.'/init.php';
         is_file($initFile) ? require_once($initFile): throw new \Illuminate\Contracts\Filesystem\FileNotFoundException($initFile .' | file not found');
     }
 }
