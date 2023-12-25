@@ -37,7 +37,7 @@ class Loader extends ServiceProvider
     public static function loadFilesInDirectory($path): void
     {
         $directory = scandir($path);
-        $routesDirectory = array_diff($directory, array('.', '..'));
+        $directory = array_diff($directory, array('.', '..'));
         foreach($directory as $file) {
             require_once ($path.$file);
         }
